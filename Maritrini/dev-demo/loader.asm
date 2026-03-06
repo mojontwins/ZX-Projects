@@ -40,7 +40,7 @@ ULA_LOOP:
 	scf
 	ld	a, $ff
 	ld	ix, 60000
-	ld	de, 3477
+	ld	de, 3360
 	call $0556
 	di
 
@@ -74,7 +74,7 @@ ULA_LOOP:
 	scf
 	ld	a, $ff
 	ld	ix, $C000
-	ld	de, 16377
+	ld	de, 16215
 	call $0556
 	di
 
@@ -86,22 +86,10 @@ ULA_LOOP:
 	scf
 	ld	a, $ff
 	ld	ix, $C000
-	ld	de, 16383
+	ld	de, 3389
 	call $0556
 	di
-
-; RAM6
-	ld	a, $16 		; ROM 1, RAM 6
-	ld	bc, $7ffd
-	out (C), a
-
-	scf
-	ld	a, $ff
-	ld	ix, $C000
-	ld	de, 16132
-	call $0556
-	di
-
+	
 ; Main binary
 	ld	a, $10 		; ROM 1, RAM 0
 	ld	bc, $7ffd
@@ -109,13 +97,13 @@ ULA_LOOP:
 
 	scf
 	ld	a, $ff
-	ld	ix, 55392
-	ld	de, 9608
+	ld	ix, 56469
+	ld	de, 8531
 	call $0556
 	di
 
 ; Decompress
-	ld  hl, 55392
+	ld  hl, 56469
 	ld  de, $9999
 	call depack
 	
