@@ -1,0 +1,6 @@
+- m?wr?.png		composited files for mappy.
+- w?.png 		just the main 0-15 tileset, for the level binary.
+- w?.beh		behaviours for them main 0-15 tileset, for the level binary.
+- w?r?.png		subtilesets for each world, for the subtilesets binaries.
+- w?r?.beh		behaviours for subtilesets, for the subtilesets binaries.
+- items.png		items subtileset.

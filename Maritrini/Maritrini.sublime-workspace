@@ -1,0 +1,418 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "dev/levels.h",
+			"settings":
+			{
+				"buffer_size": 7852,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/engine.h",
+			"settings":
+			{
+				"buffer_size": 54958,
+				"encoding": "Western (Windows 1252)",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "dev/maritrini.c",
+			"settings":
+			{
+				"buffer_size": 4345,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Git/newspectrum/Rehash/Maritrini",
+		"/D/Git/newspectrum/Rehash/Maritrini/dev"
+	],
+	"file_history":
+	[
+		"/D/OneDrive/Examine these Backups/MSOFFICE97/readme.txt",
+		"/D/Cosas/modloader/mcp62/jars/config/mod_ScatteredFeature.cfg",
+		"/D/Cosas/modloader/mcp43/startclient.bat",
+		"/D/Cosas/modloader/mcp43/recompile.bat",
+		"/D/Cosas/modloader/mcp62/conf/mcp.cfg",
+		"/D/Cosas/modloader/mcp43/decompile.bat",
+		"/D/Cosas/modloader/mcp43/reobfuscate.bat",
+		"/D/Cosas/modloader/mcp43/updatemd5.bat",
+		"/D/Cosas/modloader/mcp43/startserver.bat",
+		"/D/Cosas/modloader/mcp43/updatenames.bat",
+		"/D/Cosas/modloader/mcp62/updatemd5.bat",
+		"/D/Cosas/modloader/mcp62/decompile.bat",
+		"/D/Cosas/modloader/mcp62/startserver.bat",
+		"/D/Cosas/modloader/mcp62/startclient.bat",
+		"/D/Cosas/modloader/mcp62/reobfuscate.bat",
+		"/D/Cosas/modloader/mcp62/getchangedsrc.bat",
+		"/D/Cosas/modloader/mcp62/reformat.bat",
+		"/D/Cosas/modloader/README.md",
+		"/D/Git/MC_Mods/modloader/scatteredFeature/README.md",
+		"/D/Cosas/modloader/mcp62/runtime/commands.py",
+		"/D/Cosas/modloader/mcp62/recompile.bat",
+		"/D/Cosas/modloader/mcp62/runtime/recompile.py",
+		"/D/Cosas/modloader/mcp62/runtime/commands.pyc",
+		"/D/Cosas/_retro/zxbasicus/infinity.bas",
+		"/D/Temp/Maritrini/Maritrini/dev/Speccy/Old/Phantomas SAGA/planning.txt",
+		"/D/Cosas/retro/GHUNP.bas",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/client/renderer/TileRenderer.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/OpenGlHelper.java",
+		"/D/Cosas/MP125/Superstripped/src/minecraft/net/minecraft/world/level/tile/BlockSapling.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/CraftingManager.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/RenderGlobal.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/WorldProviderSurface.java",
+		"/D/Temp/Tokusatsu/Harenchi Gakuen/Read me.txt",
+		"/D/Cosas/b166MP2/.gitignore",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/Block.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/ItemMetadata.java",
+		"/D/Games/UltimMC/instances/Infhell2 v0.9_5/patches/org.multimc.jarmod.7d6e4f11-26d8-4ae0-984d-39d3b0853d70.json",
+		"/D/Cosas/Inslands/Main/src/minecraft/net/minecraft/world/level/levelgen/feature/trees/EnumTreeType.java",
+		"/D/Cosas/Inslands/Main/src/minecraft/net/minecraft/world/level/material/Material.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/RenderBlocks.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/EntityPlayerMP.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/ChatAllowedCharacters.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/Packet131MapData.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/NetLoginHandler.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/NetServerHandler.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/WorldServerMulti.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/BlockDragonEgg.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/ItemRenderer.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/NetClientHandler.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/WorldSavedData.java",
+		"/D/Cosas/MP125/modded/src/minecraft_server/net/minecraft/src/EntityPlayerMP.java",
+		"/D/Cosas/MP125/modded/src/minecraft_server/net/minecraft/src/StringTranslate.java",
+		"/D/Cosas/MP125/modded/src/minecraft/net/minecraft/src/BlockBed.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/World.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/Item.java",
+		"/D/Cosas/MP125/modded/src/minecraft_server/net/minecraft/src/NetLoginHandler.java",
+		"/D/Cosas/MP125/Superstripped/README.md",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/StringTranslate.java",
+		"/D/Cosas/RMCP_tests/mcp72/src/minecraft/net/minecraft/src/NetClientHandler.java",
+		"/D/Cosas/RMCP_tests/mcp72/src/minecraft/net/minecraft/src/PlayerControllerMP.java",
+		"/D/Cosas/b166MP2/vanilla/src/minecraft/net/minecraft/src/WorldProviderHell.java",
+		"/D/Cosas/MP125/Superstripped/src/minecraft/net/minecraft/network/packet/Packet1Login.java",
+		"/D/Cosas/b166MP2/main/jars/server.properties",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/BlockTrapDoor.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/BlockRedstoneWire.java",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/network/packet/Packet.java",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/client/multiplayer/ClientConnection.java",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/network/packet/ChunkVisibilityPacket.java",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/network/packet/ChunkTilesUpdatePacket.java",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/network/packet/BlockRegionUpdatePacket.java",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/network/Connection.java",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/network/packet/ChatPacket.java",
+		"/D/Cosas/MP125/Superstripped/src/minecraft/net/minecraft/src/AnvilSaveConverter.java",
+		"/D/Cosas/RMCP_tests/b1.2_02-20110517/net/minecraft/client/gui/ChatScreen.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/AnvilConverterData.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/AnvilSaveConverter.java",
+		"/D/Cosas/MP125/modded/src_vanilla/minecraft/net/minecraft/src/TextureWaterFlowFX.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/SinglePlayerCommands.java",
+		"/D/Games/beta404 challenge wip/server.properties",
+		"/D/Cosas/MP125/Superstripped/.gitignore",
+		"/D/Cosas/MP125/Superstripped/src/minecraft/lang/languages.txt",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/BlockPane.java",
+		"/D/Cosas/InfHell/InfHell/src/minecraft/net/minecraft/src/BlockGrass.java",
+		"/D/Cosas/InfHell/InfHell/src/minecraft/net/minecraft/src/ItemHoe.java",
+		"/C/Users/na_th/Desktop/b166.md",
+		"/D/Cosas/InfHell/infhell2/src/minecraft/net/minecraft/src/BlockState.java",
+		"/D/Cosas/MP125/Superstripped/src-noglitch/minecraft/net/minecraft/src/EntityRenderer.java",
+		"/D/Cosas/beta_terrain/mc_retro_options_for_1.2.5/main/minecraft/src/net/minecraft/src/GuiIngame.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/Packet50PreChunk.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/Packet51MapChunk.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/Packet52MultiBlockChange.java",
+		"/D/Cosas/MP125/main/src/minecraft_server/net/minecraft/src/PlayerInstance.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/Chunk.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/BlockDirectional.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/BlockLilyPad.java",
+		"/D/Cosas/MP125/Superstripped/jars/server.properties",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/ActiveRenderInfo.java",
+		"/D/Git/sekkrit/backend/dev/test1.c",
+		"/D/Git/sekkrit/backend/dev/bbdisp.h",
+		"/D/Git/sekkrit/backend/dev/engine.h",
+		"/D/Cosas/MP125/Superstripped/jars/rules.txt",
+		"/D/Cosas/InfHell/infhell2/src/minecraft/net/minecraft/src/WorldProviderSky.java",
+		"/D/Cosas/beta_terrain/mc_retro_options_for_1.2.5/main/minecraft/src/org/mojontwins/retroterrain/ChunkProviderGenerateRetro.java",
+		"/D/Cosas/InfHell/infhell2/src/minecraft/net/minecraft/src/ChunkProviderSky.java",
+		"/D/Cosas/MP125/main/temp/src/server/net/minecraft/src/RecipesCrafting.java",
+		"/D/Cosas/MP125/main/temp/src/client/net/minecraft/src/Block.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/ChunkProviderGenerate.java",
+		"/D/Cosas/MP125/superstripped/README.md",
+		"/C/Users/na_th/AppData/Local/Temp/7zO47BFE0A0/README.txt",
+		"/D/Games/UltimMC/instances/1.2.5 Modloader Forge Optifine Aether Retromod/.minecraft/config/forestry/base.conf",
+		"/D/Games/UltimMC/instances/bta.v7.3_04.mmc/server/server.properties",
+		"/D/Games/UltimMC/instances/bta.v7.3_04.mmc/patches/net.minecraft.json",
+		"/D/Games/UltimMC/instances/bta.v7.3_04.mmc/server/world-type.txt",
+		"/D/Cosas/MP125/superstripped/jars/rules.txt",
+		"/D/Games/UltimMC/instances/1.2.5 Modloader Forge Optifine Aether Retromod/patches/org.multimc.jarmod.dd4720a5-b618-4ccd-ac87-2d1e8e0b066f.json",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/BlockBookshelf.java",
+		"/D/Cosas/beta_terrain/r1.2.5/src/minecraft/org/mojontwins/retroterrain/ChunkProviderGenerateBeta.java",
+		"/D/Cosas/beta_terrain/r1.2.5/src/minecraft/org/mojontwins/retroterrain/ChunkProviderGenerateRetro.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/BlockCrops.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/EntityPlayer.java",
+		"/D/Cosas/MP125/superstripped/jars/server.properties",
+		"/D/Cosas/MP125/main/src/minecraft/com/misc/biomesoplenty/ItemBlockFoliage.java",
+		"/D/Cosas/MP125/superstripped/workspace/output.txt",
+		"/D/Cosas/beta_terrain/r1.2.5/src/minecraft/org/mojontwins/retroterrain/NoiseGeneratorOctavesBeta.java",
+		"/D/Cosas/RMCP_tests/a1.1.2/src/minecraft/net/minecraft/src/GuiIngame.java",
+		"/D/Cosas/RMCP_tests/a1.1.2/src/minecraft/net/minecraft/src/ItemFood.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/ContainerEnchantment.java",
+		"/D/Cosas/MP125/main/src/minecraft/net/minecraft/src/EntityMoveHelper.java"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"collide",
+			"enemies_move"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "dev/levels.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7341,
+								7341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "dev/engine.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 54958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33360,
+								33347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 23454.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dev/maritrini.c",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1719,
+								1719
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 186.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 46.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "Maritrini.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Cosas\\RMCP_tests\\r125_modded\\r125_modded.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 312.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,32 @@
+Planning
+========
+
+Por ahora tengo pensado seguir esta secuencia de acciones:
+
+- Preparar todo el tileset y los sprites para [50,000].
+- Tomar MK2 versión 0.89 y clonar -> 0.90
+- Montar el mapa de [50,000]
+- Montar MK2 en modo 48K para [50,000]
+- Programar los conveyors en modo genital.
+- Programar el mapa cíclico.
+- Programar las plataformas móviles en modo genital.
+- Diseñar y programar saltos en modo genital.
+- Crear una torreta (enemigo fijo que dispara). Borrar todo lo que tenga que ver con bullets o cocos y...
+- Programar nuevo manejador global de proyectiles [*]
+
+[*] El manejador global de proyectiles (MGP) es un sistema para controlar los disparos del juego, tanto si los tira el jugador como los enemigos.
+
+Idea: un flag por disparo controla a quien mata: enemigos, jugador, ambos. Directivas en config.h controlan como se rellena este flag. En el flag se puede codificar más cosas, como por ejemplo la potencia del disparo:
+
+···PESSS,
+
+P = Kills player.
+E = Kills enemy.
+SSS = Strength (0-7)
+
+PLAYER_BULLETS_KILL_ENEMIES
+PLAYER_BULLETS_KILL_PLAYER
+ENEMIES_BULLETS_KILL_PLAYER
+ENEMIES_BULLETS_KILL_ENEMIES
+
+Esto para empezar. La idea es que me de tiempo a esto durante las vacaciones.

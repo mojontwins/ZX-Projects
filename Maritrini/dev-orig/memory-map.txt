@@ -1,0 +1,80 @@
+cADD		LEN		WHAT
+
+RAM3: "Screens"
+
+49152	1530	ram3-mt-marco.bin
+50682	244		ram3-game-over.bin
+50926	1477	ram3-intro-forest.bin
+52403	1552	ram3-intro-hitech.bin
+53955	1210	ram3-intro-basement.bin
+55165	828		ram3-menu.bin
+55993	905		ram3-intro-school.bin
+56898	1801	ram3-intro-mine.bin
+58699	2269	ram3-credits.bin
+60968	361		ram3-mtlogo.bin
+61329	1203	ram3-ubhres.bin
+62532	
+
+
+RAM4: "Levels A"
+
+Stage 1:
+
+49152	1464	tileset-forest.bin
+50616	855		map-forest1.bin
+51471	900		map-forest2.bin
+52371	970		map-forest3.bin
+53341	792		map-forest4.bin
+
+Stage 2:
+
+54133	1384	tileset-school.bin
+55517	729		map-school1.bin
+56246	745		map-school2.bin
+56991	572		map-school3.bin
+57563	656		map-school4.bin
+
+Stage 3:
+
+58219	1388	tileset-basement.bin
+59607	834		map-basement1.bin
+60441	785		map-basement2.bin
+61226	710		map-basement3.bin
+61936	917		map-basement4.bin
+
+62857	-> free
+
+RAM6: "Levels B" & "Ending sequence"
+
+Stage 4:
+
+49152	1445	tileset-mine.bin
+50597	790		map-mine1.bin
+51387	783		map-mine2.bin
+52170	622		map-mine2.bin
+52792	624		map-mine4.bin
+
+Stage 5:
+
+53416	1485	tileset-hitech.bin
+54901	777		map-hitech1.bin
+55678	873		map-hitech2.bin
+56551	646		map-hitech3.bin
+57197	532		map-hitech4.bin
+
+Training:
+
+57729	1126	tileset-training.bin
+58855	278		map-training.bin
+
+Hidden:
+
+59133	1411	tileset-secret.bin
+60544	883		map-secret.bin
+61427	3159	ram6-ending-1-bitmap.bin
+64586	28		ram6-ending-1-attrs-0.bin
+64614	86		ram6-ending-1-attrs-1.bin
+64700	152		ram6-ending-1-attrs-2.bin
+64852	211		ram6-ending-1-attrs-3.bin
+65063	268		ram6-ending-1-attrs-4.bin
+65331

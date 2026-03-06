@@ -1,0 +1,374 @@
+# Key To Time, tech demo #2 script
+
+#######################################
+### INITIALIZATION SCRIPT (SPECIAL) ###
+#######################################
+
+LEVELID INIT_GAME
+
+DEFALIAS
+	# Control for the 1st time in each level
+	$FIRST_TIME_LEVEL_0 	0
+	$FIRST_TIME_LEVEL_1 	1
+	$FIRST_TIME_LEVEL_2 	2
+	$FIRST_TIME_LEVEL_3 	3
+	$FIRST_TIME_LEVEL_4 	4
+	$FIRST_TIME_LEVEL_5 	5
+	$FIRST_TIME_LEVEL_6 	6
+	$FIRST_TIME_LEVEL_7 	7
+	$FIRST_TIME_LEVEL_8 	8
+	$FIRST_TIME_LEVEL_T 	9
+
+	# Make this one = 1 when you can travel to another planet
+	$TRAVEL_IN_SPACE		10
+
+	# Another first times...
+	$FIST_TIME_TARDIS		11
+
+	# En qué época estamos
+	$EPOCA					127
+
+	# The arcon. Not really much used in the
+	# script, but for clarity...
+	$ARCON_0 				120
+	$ARCON_1				121
+	$ARCON_2 				122
+	$ARCON_3 				123
+	$ARCON_4 				124
+	$ARCON_5 				125
+	$ARCON_6 				126
+
+	# Test / debug
+	$CONT_TEST 				119
+
+	# Some macros
+	%CONV_END 				EXTERN_E 240, 0
+	%SHOW_ARCON				EXTERN_E 241, 0
+	%TARDIS_MENU 			EXTERN_E 242, 0
+	%CLS					EXTERN_E 243, 0
+	%SHOW_TIME				EXTERN_E 244, 0
+	%EFFECT					EXTERN_E 245, 0
+	%INIT_TEXTS				EXTERN_E 255, 0
+END
+
+ITEMSET
+	SIZE 3
+	LOCATION 2, 21
+	DISPOSITION HORZ, 3
+	SELECTOR 66, 62, 63
+	EMPTY 0
+	SLOT_FLAG 30
+	ITEM_FLAG 31
+END
+
+ENTERING GAME
+	IF TRUE
+	THEN
+		# First time on each level
+		SET $FIRST_TIME_LEVEL_0 = 1
+		SET $FIRST_TIME_LEVEL_1 = 1
+		SET $FIRST_TIME_LEVEL_2 = 1
+		SET $FIRST_TIME_LEVEL_3 = 1
+		SET $FIRST_TIME_LEVEL_4 = 1
+		SET $FIRST_TIME_LEVEL_5 = 1
+		SET $FIRST_TIME_LEVEL_6 = 1
+		SET $FIRST_TIME_LEVEL_7 = 1
+		SET $FIRST_TIME_LEVEL_8 = 1
+		SET $FIRST_TIME_LEVEL_T = 1
+
+		# Can't travel in space
+		SET $TRAVEL_IN_SPACE = 0
+
+		# Another first times
+		#SET $FIRST_TIME_TARDIS = 1
+		SET $FIRST_TIME_TARDIS = 0
+
+		# The storage "arcon"
+		SET $ARCON_0 = 0
+		SET $ARCON_1 = 44
+		SET $ARCON_2 = 45
+		SET $ARCON_3 = 0
+		SET $ARCON_4 = 0
+		SET $ARCON_5 = 0
+		SET $ARCON_6 = 43
+
+		# Items
+		SET ITEM 0 = 0
+		SET ITEM 1 = 36
+		SET ITEM 2 = 0
+
+		# Init texts
+		%INIT_TEXTS
+
+		# Game starts in the desert
+		SET $EPOCA = 5
+
+		# Show time
+		%SHOW_TIME
+
+		# Test / debug
+		SET $CONT_TEST = 38
+	END
+END
+
+END_OF_LEVEL
+
+# --------------------------------------------------------------------------- #
+
+###############
+### LEVEL 0 ###
+###############
+
+LEVELID LEVEL_0
+INC_DECORATIONS decos0.spt
+
+ENTERING GAME
+	IF TRUE
+	THEN
+		SET $EPOCA = 0
+		SETXY 7, 4
+	END
+END
+
+ENTERING SCREEN 0
+	IF $FIRST_TIME_LEVEL_0 = 1
+	THEN
+		SET_FIRE_ZONE_TILES 6, 4, 8, 5 
+	END
+END IF
+
+PRESS_FIRE AT SCREEN 0
+	IF $FIRST_TIME_LEVEL_0 = 1
+	THEN
+		SET $FIRST_TIME_LEVEL_0 = 0
+		SET_FIRE_ZONE 0, 0, 0, 0
+		EXTERN_E 0, 1
+		%CONV_END
+		REDRAW
+	END
+
+	IF PLAYER_IN_X_TILES 4, 6
+	IF PLAYER_IN_Y_TILES 5, 7
+	THEN
+		EXTERN_E 0, 2
+		%CONV_END
+		REDRAW
+	END
+
+	IF PLAYER_IN_X_TILES 8, 10
+	IF PLAYER_IN_Y_TILES 5, 7
+	THEN
+		EXTERN_E 0, 3
+		%CONV_END
+		REDRAW
+	END
+
+	# BACK TO THE T.A.R.D.I.S
+	IF PLAYER_TOUCHES 7, 3
+	THEN
+		%CLS
+		WARP_TO_LEVEL 9, 0, 0, 0, 1
+	END
+END
+
+END_OF_LEVEL
+
+# --------------------------------------------------------------------------- #
+
+###############
+### LEVEL 2 ###
+###############
+
+LEVELID LEVEL_2
+INC_DECORATIONS decos2.spt
+
+ENTERING GAME
+	IF TRUE
+	THEN
+		SET $EPOCA = 2
+		SETXY 4, 6
+	END
+END
+
+PRESS_FIRE AT SCREEN 0
+	# BACK TO THE T.A.R.D.I.S
+	IF PLAYER_TOUCHES 4, 5
+	THEN
+		%CLS
+		WARP_TO_LEVEL 9, 0, 0, 0, 1
+	END
+END
+
+END_OF_LEVEL
+
+# --------------------------------------------------------------------------- #
+
+###############
+### LEVEL 5 ###
+###############
+
+LEVELID LEVEL_5
+INC_DECORATIONS decos5.spt
+
+ENTERING GAME
+	IF TRUE
+	THEN
+		SET $EPOCA = 5
+		SETXY 4, 6
+	END
+END
+
+PRESS_FIRE AT SCREEN 0
+	# BACK TO THE T.A.R.D.I.S
+	IF PLAYER_TOUCHES 4, 5
+	THEN
+		%CLS
+		WARP_TO_LEVEL 9, 0, 0, 0, 1
+	END
+END
+
+END_OF_LEVEL
+
+# --------------------------------------------------------------------------- #
+
+###############
+### LEVEL 6 ###
+###############
+
+LEVELID LEVEL_6
+INC_DECORATIONS decos6.spt
+
+ENTERING GAME
+	IF TRUE
+	THEN
+		SET $EPOCA = 6
+		SETXY 4, 6
+	END
+END
+
+PRESS_FIRE AT SCREEN 0
+	# BACK TO THE T.A.R.D.I.S
+	IF PLAYER_TOUCHES 4, 6
+	THEN
+		%CLS
+		WARP_TO_LEVEL 9, 0, 0, 0, 1
+	END
+END
+
+END_OF_LEVEL
+
+# --------------------------------------------------------------------------- #
+
+##########################
+### LEVEL T.A.R.D.I.S. ###
+##########################
+
+LEVELID LEVEL_TARDIS
+INC_DECORATIONS decosT.spt
+
+ENTERING GAME
+	IF TRUE
+	THEN
+		SETXY 7, 3
+	END
+END
+
+ENTERING SCREEN 0
+	IF $FIRST_TIME_LEVEL_T = 1
+	THEN
+		SET_FIRE_ZONE_TILES 6, 2, 8, 4
+	END
+
+	IF $FIRST_TIME_LEVEL_T = 0
+	THEN
+		SET_FIRE_ZONE_TILES 7, 0, 7, 0
+	END
+END
+
+PRESS_FIRE AT SCREEN 0
+	IF $FIRST_TIME_LEVEL_T = 1
+	THEN
+		SET $FIRST_TIME_LEVEL_T = 0
+		SET_FIRE_ZONE_TILES 7, 0, 7, 1
+		EXTERN_E 0, 5
+		%CONV_END
+		REDRAW
+	END
+
+	IF PLAYER_TOUCHES 7, 1
+	THEN
+		%CLS
+		WARP_TO_LEVEL #$EPOCA, 0, 0, 0, 1
+	END
+
+	# Tardis.
+	IF PLAYER_IN_X_TILES 6, 8
+	IF PLAYER_IN_Y_TILES 5, 7
+	IF $FIRST_TIME_TARDIS = 1
+	THEN
+		SET $FIRST_TIME_TARDIS = 0
+		EXTERN_E 0, 7
+		EXTERN_E 0, 8
+		EXTERN_E 0, 9
+		EXTERN_E 0, 10
+		%CONV_END
+		REDRAW
+	END
+	
+	IF PLAYER_IN_X_TILES 6, 8
+	IF PLAYER_IN_Y_TILES 5, 7
+	THEN
+		%CLS
+		%TARDIS_MENU
+		%CLS
+		REDRAW
+		SHOW
+		%EFFECT
+		%SHOW_TIME
+		REDRAW
+	END
+END
+
+ENTERING SCREEN 4
+	IF TRUE
+	THEN
+		ADD_CONTAINER $CONT_TEST, 10, 6
+	END
+END
+
+PRESS_FIRE AT SCREEN 4
+	IF PLAYER_TOUCHES 4, 7
+	THEN
+		EXTERN_E 0, 4
+		EXTERN_E 0, 6
+		%CONV_END
+		REDRAW
+	END
+
+	IF PLAYER_IN_Y_TILES 6, 7
+	IF PLAYER_IN_X_TILES 6, 8
+	THEN
+		DECORATIONS
+			6, 5, 26
+			7, 5, 27
+			8, 5, 28
+			6, 6, 29
+			7, 6, 30
+			8, 6, 31
+		END
+		SHOW
+		PAUSE 20
+		%SHOW_ARCON
+		DECORATIONS
+			6, 5, 20
+			7, 5, 21
+			8, 5, 22
+			6, 6, 23
+			7, 6, 24
+			8, 6, 25
+		END
+		REDRAW
+	END
+END
+
+END_OF_LEVEL

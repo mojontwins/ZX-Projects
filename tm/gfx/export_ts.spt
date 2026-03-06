@@ -1,0 +1,13 @@
+# Create a binary with the font and the tileset
+# Needs mkts_om v0.6+
+
+reset patterns
+open font.png
+charset 0, 0, 32, 2
+
+open work.png
+defaultink 7
+metatileset 0, 0, 16, 3, 2, 2 unmapped
+
+output patterns ../dev/bin/tileset.bin
+output cmaps ../dev/bin/metatile_attrs.bin

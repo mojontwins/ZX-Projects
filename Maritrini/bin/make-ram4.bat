@@ -1,0 +1,1 @@
+copy /b tileset-forest.bin + map-forest1.bin + map-forest2.bin + map-forest3.bin + map-forest4.bin + tileset-school.bin + map-school1.bin + map-school2.bin + map-school3.bin + map-school4.bin + tileset-basement.bin + map-basement1.bin + map-basement2.bin + map-basement3.bin + map-basement4.bin ram4.bin

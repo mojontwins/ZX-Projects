@@ -1,0 +1,158 @@
+Guía de acciones
+================
+
+Esto va a ser un lío, así que voy a crearme posibles itinierarios para terminar el juego. Así los voy programando en orden. Además, esto sirve de walkthrough.
+
+General: la TARDIS es un nivel en si mismo con muchas cosas necesarias para el juego, como el arcón donde meteremos los objetos en plan almacenaje. En la pantalla del control de mando está la puerta de salida en una de las paredes. Tocando este tile (con un FIRE_ZONE) habrá que decidir a qué fase se salta, siempre a la misma pantalla. De esto se encargará el FLAG 0, cuyo valor determinará a qué fase se salta.
+
+Para movernos de una época a otra tendremos que usar la consola de la TARDIS. Esto sacará un menú que dejará en el FLAG 0 el valor correcto. Esto será totalmente CUSTOM y lo implementaré mediante EXTERN. Tengo que ponerme los guantes de programar sin gastar porque esto debe ocupar lo MINIMO de memoria. Quiero empepinar el motor genital con muchas cosas y necesitaré sitio.
+
+En la TARDIS se accede a otras pantallas que no sirven para nada (me encanta esto) y entre ellas tenemos la pantalla del arcón. El arcón no es más que un array de 8 posiciones donde guardaremos los objetos. Igualmente, el arcón debe lanzar un EXTERN que nos deje seleccionar un objeto que pasaría (intercambiado) al slot actual del inventario.
+
+Cosas a implementar en el motor genital:
+
+- Conveyors.
+- Caidas al vacio (pierde vida y respawn).
+- Saltar un tile (pensar en cómo animar esto).
+- Plataformas moviles.
+
+Otra cosa: tengo que recordar hacer que usar un objeto incorrecto con un personaje siempre saque un "eso no me interesa para nada".
+
+Principio del juego: 
+====================
+
+Aparecemos en la TARDIS, en el mundo de [10,000]. En una posible intro se ve a Meghan luchando contra los controles en una tormenta del vórtice. Aterriza en un mundo desierto.
+
+Cuando empieza el juego, el script hace un par de pequeñas jodas:
+
+- Pantalla de la TARDIS, pinto con tiles a Meghan, se lanza texto. "Voy a salir ahí fuera". 
+- Saltamos al mapa de [10,000].
+
+[10,000]
+Aquí ya tomamos el control de Meghan. En la pantalla donde aparecemos de [10,000] no se puede hacer nada, está todo bloqueado con piedras. Hay que volver a la TARDIS.
+
+Hay un portal aquí (que conecta de forma totalmente inutil con la pantalla de la TARDIS de [80,000]). Al examinarlo, Meghan lo identifica como un portal temporal, explica que sirve para conectar dos puntos del tiempo en el mismo punto del espacio, nos comenta que está "bloqueado", y que debe haber en algún lugar un dispositivo que lo esté haciendo. Comenta que una tecnología así sólo fue posible a partir del año 45,000, lo que nos da una pista.
+
+[TARDIS]
+Vamos al arcón. La primera vez que lo usamos sale un texto que lo explica más o menos. En el arcón hay unas fotos que Meghan se tomó en la playa con Cheril una vez que fue a visitarla en el siglo XXI. Cogemos las (FOTOS_SEXIS).
+
+Vamos a la consola. Seleccionamos el año 233
+
+[233]
+
+T-p-p-p
+|   | |
+· ·-· R
+
+· · · ·
+
+· · · ·
+Aparecemos en una especie de salón de trono. Hay una salida que conecta con la sala de las reliquias. Hay un señor que nos dice que ha habido un terremoto que ha dejado el pasillo hecho un cisco, con un montón de hielo y boquetes. Maniobramos por las pistas de hielo sin caernos (dos o tres pantallas).
+
+Llegamos a la sala de las reliquias. En la pared hay un Iman. También hay un soldado. 
+
+- Coger iman: el soldado nos dice que por encima de su cadaver, que es una reliquia.
+- Hablar con soldado: comenta que el iman es una reliquia, y que el deber de su familia es protegerlo. Él, su padre, el padre de su padre, y el padre del padre de su padre antes que él lo protegieron. Esto les llevó a una vida de tristeza y celibato. Meghan le pregunta que si tuvieron una vida de celibato como es que él está en el mundo, y él le dice que no le gusta hablar de su vida privada.
+- Hablar con el soldado más: "Mi tarea es mi vida pero me siento tan solo"
+- Usar las (FOTOS_SEXIS) con el soldado. Se emociona.
+- Hablar con el soldado más: "Qué ojazos..." "No para de mirar la foto", etc...
+- Coger (IMAN).
+
+Volvemos a la TARDIS.
+
+[TARDIS]
+Vamos a la consola. Seleccionamos el año 50,000
+
+[50,000]
+T-p-·-·
+|     |
+| · D-·
+|     |
+| · L ·
+|   | |
++-C-·-·
+
+T = TARDIS
+p = plataformas móviles
+D = Dispositivo temporal
+L = laboratorio
+C = conveyors.
+
+Ante cada sitio importante hay un terminal. Examinándolo nos dice qué es.
+
+La fase del período extra-dimensional es un anillo de pasillos. La pantalla de la tardis aparece en una esquina y ahí hay un ordenador que al examinarlo nos habla un poco de que la gente ahora no es corpórea, sino que está instalada en un gran ordenador. Meghan exclama "joder, ¡Ni en PC!". "¿Y cómo os comunicáis?" "¡A 68,000 baudios! Y a muchos faps."
+
+Otro ordenador muestra la historia del planeta, describiendo lo que pasa en cada época.
+
+En una pantalla adyacente hay una puerta abierta a una de las pantallas centrales donde hay un gran ordenador. Al examinarlo Meghan lo reconoce como un "dispositivo de contención temporal" que "probablemente sea lo que bloquea los portales". No se puede desactivar, sólo se puede inutilizar volándola por los aires. Y los explosivos están prohibidos desde la gran guerra.
+
+Dando vueltas por el anillo las puertas están cerradas. Una de ellas parece abierta pero tiene un control a un lado y un campo de fuerza que mata si te acercas. (rebote y tal). "Este control parece vulnerable a una fuerza magnética".
+
+Usamos el iman con el control y el campo de fuerza desaparece. Entramos en la sala.
+
+Dentro del laboratorio está el (PESTICIDA)
+
+Para llegar al laboratorio hemos pasado por una serie de cintas transportadoras que impiden ir en la dirección contraria. Hay que dar toda la vuelta al anillo, y pasar por una zona de plataformas móviles para volver a la pantalla de la TARDIS.
+
+[TARDIS]
+Vamos a la consola. Seleccionamos el año [5,992]
+
+[5,992]
+Es el año de la guerra. Pasamos por una única pantalla hasta llegar al polvorín:
+
+T-·-P ·
+|
+· · · · 
+
+· · · ·
+
+· · · ·
+
+donde T es la pantalla de la TARDIS y P es la pantalla del POLVORÍN.
+
+Dentro se ve claramente una bomba (usar el gráfico de Helmet). Hay un muro que lo rodea. A la entrada hay un soldado que solo dice "no me mueve de aquí ni el pedo de un yonki" y cosas por el estilo. Hay que fijarse que la pared tiene un hueco donde crece un arbol. "Este árbol debe tener al menos 500 años".
+
+Volvemos a la TARDIS.
+
+[TARDIS]
+Vamos a la consola. Seleccionamos el año [3,322] 
+
+[3,322]
+La zona "abierta" de esta época, inicialmente, es:
+
+T ·-P ·
+| |
+·-· · ·
+|
+· · · ·
+|
+·-t · ·
+t = tienda de ropa (para luego), P = polvorín.
+
+Hay que hacer patente que 3,322 y 5,992 están conectadas haciendo que las pantallas principales sean MUY parecidas.
+
+La pantalla del polvorín debe ser exactamente igual, o muy parecida. Debe haber un pequeñísimo arbolito en el hueco del muro. Al examinarlo lo califica como "una hierbecica". Se puede pasar por él, por supuesto. Si usamos el (PESTICIDA) se muere y desaparece... ¡Y también desaparece en [5,992]
+
+Volvemos a la TARDIS.
+
+[TARDIS]
+Vamos a la consola. Seleccionamos [5,992]
+
+[5,992]
+Vamos al polvorín y nos colamos por el hueco. Cogemos la (BOMBA).
+
+Volvemos a la TARDIS.
+
+[TARDIS]
+Vamos a la consola. Seleccionamos [50,000]
+
+[50,000]
+Vamos a la pantalla del dispositivo temporal y lo reventamos con la bomba. Meghan comenta que seguramente los portales estén ya activados.
+
+Volvemos a la TARDIS.
+
+[TARDIS]
+Vamos a la consola. Seleccionamos [10,000]
+
+[10,000]
+Tocamos el portal. Nos lleva a [80,000] y aquí tenemos el primer contacto con el viejo loco.

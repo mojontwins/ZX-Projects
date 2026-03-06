@@ -1,0 +1,1 @@
+copy /b ram3-mt-marco.bin + ram3-game-over.bin + ram3-intro-forest.bin + ram3-intro-hitech.bin + ram3-intro-basement.bin + ram3-menu.bin + ram3-intro-school.bin + ram3-intro-mine.bin + ram3-credits.bin + ram3-mtlogo.bin + ram3-ubhres.bin ram3.bin

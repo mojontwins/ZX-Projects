@@ -1,0 +1,982 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Im",
+				"ImageDestroy\tabc"
+			],
+			[
+				"offs",
+				"offsetCounter\tabc"
+			],
+			[
+				"AY_S",
+				"AY_PLAY_SOUND\t(diario.md)"
+			],
+			[
+				"__",
+				"__tile_address\tabc"
+			],
+			[
+				"mkts",
+				"mkts_om.exe\t(mkts_om.bas)"
+			],
+			[
+				"doS",
+				"doStrait2x2\tabc"
+			],
+			[
+				"patter",
+				"patternWidthInPixels\tabc"
+			],
+			[
+				"cpcMode",
+				"cpcMode0GetBitmapFrom\tabc"
+			],
+			[
+				"_s",
+				"_simple_coco_update_continue\tabc"
+			],
+			[
+				"eij_state_moving",
+				"_eij_state_moving_y"
+			],
+			[
+				"_eij_stil",
+				"_eij_state_still_appearing\tabc"
+			],
+			[
+				"eij_",
+				"_eij_state_done"
+			],
+			[
+				"enems_hotspot",
+				"enems_hotspots_0\tabc"
+			],
+			[
+				"custom",
+				"custom_animation.h\t(custom_animation.h)"
+			],
+			[
+				"BREAL",
+				"BREAKABLE_WALLS\t(bullets.h)"
+			],
+			[
+				"bullets_",
+				"bullets_update\tabc"
+			],
+			[
+				"ENABLE",
+				"ENABLE_FANTIES\tabc"
+			],
+			[
+				"FANTI",
+				"FANTIES_TYPE_HOMING\t(config.h)"
+			],
+			[
+				"invali",
+				"invalidate_tile\t(printer.h)"
+			],
+			[
+				"VIEW",
+				"VIEWPORT_Y\tabc"
+			],
+			[
+				"inval",
+				"invalidate_tile\t(printer.h)"
+			],
+			[
+				"main",
+				"maincounter\tabc"
+			],
+			[
+				"VIE",
+				"VIEWPORT_Y\t(printer.h)"
+			],
+			[
+				"draw_colou",
+				"draw_coloured_tile\t(printer.h)"
+			],
+			[
+				"invalidate",
+				"invalidate_viewport\t(printer.h)"
+			],
+			[
+				"orig",
+				"orig_tile\tabc"
+			],
+			[
+				"draw_om",
+				"draw_invalidate_coloured_tile_gamearea\t(printer.h)"
+			],
+			[
+				"draw_coloured_ti",
+				"draw_coloured_tile_gamearea\tabc"
+			],
+			[
+				"dra",
+				"draw_invalidate_coloured_tile_gamearea\tabc"
+			],
+			[
+				"draw",
+				"draw_coloured_tile_gamearea\tabc"
+			],
+			[
+				"baddies",
+				"baddiesCountGenital"
+			],
+			[
+				"baddiesCou",
+				"baddiesCountGenital\tabc"
+			],
+			[
+				"textMap",
+				"textMapH\tabc"
+			],
+			[
+				"textT",
+				"textTilesetfile\tabc"
+			],
+			[
+				"TextBox",
+				"TextBox_GetText\tabc"
+			],
+			[
+				"text",
+				"textEnemsLoadFile\tabc"
+			],
+			[
+				"textt",
+				"textTilesetfile\tabc"
+			],
+			[
+				"button",
+				"buttonTilesetfile\tabc"
+			],
+			[
+				"Button_",
+				"Button_Event\tabc"
+			],
+			[
+				"buttonC",
+				"buttonCreateNew\tabc"
+			],
+			[
+				"Text",
+				"TextBox_GetText\tabc"
+			],
+			[
+				"textScr",
+				"textScrW\tabc"
+			],
+			[
+				"Textb",
+				"TextBox_New\tabc"
+			],
+			[
+				"TILANI",
+				"TILANIMS_TYPE_SELECT_FLAG\tabc"
+			],
+			[
+				"TILANIMS_SE",
+				"TILANIMS_TYPE_SELECT_FLAG\t(config.h)"
+			],
+			[
+				"TILANIMS_TP",
+				"TILANIMS_TYPE_ONE\tabc"
+			],
+			[
+				"TILAN",
+				"TILANIMS_PERIOD\t(config.h)"
+			],
+			[
+				"_va_coll",
+				"_va_collision_done\tabc"
+			],
+			[
+				"MA",
+				"MAX_BULLETS\tabc"
+			],
+			[
+				"clausuas",
+				"clausulasUsed\tabc"
+			],
+			[
+				"CUSTOM",
+				"CUSTOM_HIT\t(player.h)"
+			],
+			[
+				"PLAY_SAM",
+				"PLAY_SAMPLE_ON_DEATH\t(config.h)"
+			],
+			[
+				"LEVEL_ENDING",
+				"LEVEL_ENDING_GOOD\t(script.spt)"
+			],
+			[
+				"LEVEL_END",
+				"LEVEL_ENDING_BAD\t(script.spt)"
+			],
+			[
+				"LEVEL_CAS",
+				"LEVEL_CASTLE_B\t(script.spt)"
+			],
+			[
+				"PLA",
+				"PLAYER_DRUNK_EXPR\t(va_genital.h)"
+			],
+			[
+				"_player_mvoe",
+				"_player_move_af_holed_set\tabc"
+			],
+			[
+				"_player_move",
+				"_player_move_af_incframe_done\tabc"
+			],
+			[
+				"p_ct",
+				"p_state_ct\tabc"
+			],
+			[
+				"EST_",
+				"EST_HOLED\tabc"
+			],
+			[
+				"_enems",
+				"_enems_move_pregotten_set\tabc"
+			],
+			[
+				"bye",
+				"byteCoordinates\tabc"
+			],
+			[
+				"sp_nana",
+				"sp_nanako_0"
+			],
+			[
+				"nanako_may",
+				"nanako_may_move_horz"
+			],
+			[
+				"sp_mar",
+				"sp_marcador_vidas_1"
+			],
+			[
+				"cwit",
+				"cwithheader"
+			],
+			[
+				"He",
+				"fOutHeader"
+			],
+			[
+				"PLAT",
+				"PLATFORM_SG1000"
+			],
+			[
+				"metaSpri",
+				"metaSpriteIndex"
+			],
+			[
+				"metasprite",
+				"metaSpriteIndex"
+			],
+			[
+				"metaSpr",
+				"metaSpriteType"
+			],
+			[
+				"wMeta",
+				"wMetaPixels"
+			],
+			[
+				"PLATFORM_",
+				"PLATFORM_CPC"
+			],
+			[
+				"PLATFORM",
+				"PLATFORM_ZX"
+			],
+			[
+				"TMS",
+				"TMS9918"
+			],
+			[
+				"TMS9918Get",
+				"TMS9918GetBitmapFrom"
+			],
+			[
+				"TMS9918",
+				"TMS9918Colour"
+			],
+			[
+				"double_hots",
+				"double_hotspots_do\t(mainloop.h)"
+			],
+			[
+				"double",
+				"double_hotspots_paint"
+			],
+			[
+				"attr",
+				"attr_table_offset"
+			],
+			[
+				"togg",
+				"toggle_switch\t(extra_vars.h)"
+			],
+			[
+				"toggle",
+				"toggle_timer\t(extra_vars.h)"
+			],
+			[
+				"HOTSPOT_TYPE_TO",
+				"HOTSPOT_TYPE_TOGGLE_OFF\t(extra_vars.h)"
+			],
+			[
+				"wate",
+				"water_strip\t(on_entering_screen.h)"
+			],
+			[
+				"PPU_CTRL",
+				"PPU_CTRL_VAR1\t(neslib.s)"
+			],
+			[
+				"frame",
+				"frame_counter"
+			],
+			[
+				"stri",
+				"strictMscNumeric"
+			],
+			[
+				"e",
+				"e24to9"
+			],
+			[
+				"ImgIn",
+				"imgIn"
+			],
+			[
+				"calcua",
+				"calculateHugePal"
+			],
+			[
+				"ig",
+				"imgIn"
+			],
+			[
+				"SPING",
+				"SPRING_SPIKE_TILE"
+			],
+			[
+				"customScr",
+				"customScriptOrder"
+			],
+			[
+				"customScir",
+				"customScriptOrder"
+			],
+			[
+				"MAX_CHAC",
+				"MAX_CHAC_CHACKS_QUEUED"
+			],
+			[
+				"chac_chacs_Q",
+				"chac_chacs_queue_read"
+			],
+			[
+				"chac_chacs_queu",
+				"chac_chacs_queue_write\t(bss.h)"
+			],
+			[
+				"chac",
+				"chac_chacs_read"
+			],
+			[
+				"inte",
+				"interactives_index"
+			],
+			[
+				"interactives",
+				"interactives_yx"
+			],
+			[
+				"MAP_",
+				"MAP_FORMAT_PACKED"
+			],
+			[
+				"RLE",
+				"MAP_FORMAT_RLE16"
+			],
+			[
+				"CHAC_CHAC",
+				"CHAC_CHAC_FROM_MAP"
+			],
+			[
+				"max_",
+				"max_chac_chacs\t(tile_chac_chac.h)"
+			],
+			[
+				"ENABLE_CH",
+				"ENABLE_TILE_CHAC_CHAC\t(map_detectors.h)"
+			],
+			[
+				"chac_chac",
+				"chac_chacs_ct\t(tile_chac_chac.h)"
+			],
+			[
+				"chac_c",
+				"chac_chacs_state\t(tile_chac_chac.h)"
+			],
+			[
+				"addressboo",
+				"addressbook_export\t(export.inc)"
+			],
+			[
+				"bedework_rec",
+				"bedework_records_starting_with\t(simple_bedework_rest_client.php)"
+			],
+			[
+				"start",
+				"start_row"
+			],
+			[
+				"bedewo",
+				"bedework_client"
+			],
+			[
+				"allow",
+				"allow_report"
+			],
+			[
+				"bedew",
+				"bedework_client"
+			],
+			[
+				"bede",
+				"bedework_client"
+			],
+			[
+				"cookie",
+				"cookie_jar"
+			],
+			[
+				"curl",
+				"curl_setup"
+			],
+			[
+				"cooke",
+				"cookie_jar"
+			],
+			[
+				"coo",
+				"cookie_jar"
+			],
+			[
+				"current",
+				"current_rule"
+			],
+			[
+				"getg",
+				"get_group\t(list.inc)"
+			],
+			[
+				"rcmail",
+				"rcmail::write_log"
+			],
+			[
+				"grou",
+				"group_id"
+			],
+			[
+				"vcard_",
+				"vcard_filename"
+			],
+			[
+				"toa",
+				"total_entries"
+			],
+			[
+				"write",
+				"write_log"
+			],
+			[
+				"webdav_abook",
+				"webdav_abook_user_url"
+			],
+			[
+				"u",
+				"uid\t(rcube_webdav_addressbook.php)"
+			],
+			[
+				"webdav_aboo",
+				"webdav_abook_dir"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "utils/pageditor.bas",
+			"settings":
+			{
+				"buffer_size": 12947,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "readme.md",
+			"settings":
+			{
+				"buffer_size": 748,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/Git/MK1_Pestecera/wip/deleteme/mus/compress_songs.bat",
+			"settings":
+			{
+				"buffer_size": 100,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 132.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ayu",
+				"ayu: Activate theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Disable Package"
+			],
+			[
+				"the",
+				"UI: Select Theme"
+			],
+			[
+				"beauti",
+				"Beautify::Beautify File"
+			],
+			[
+				"mini",
+				"Minify::Default File Settings"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"boxy",
+				"Boxy Theme: Preferences"
+			],
+			[
+				"markdow",
+				"Set Syntax: Markdown Extended"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 382.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Git/newspectrum/Vault/teletext",
+		"/D/Git/newspectrum/Vault/teletext/utils"
+	],
+	"file_history":
+	[
+		"/D/Git/MK1/games_cpc/ababol/dev/printer.h",
+		"/D/Git/MK1/games_cpc/helmet/dev/system/tilemap_conf.asm",
+		"/D/Git/MK1/docs/README.md",
+		"/D/Git/MK1/src_cpc/dev/printer.h",
+		"/D/Git/MK1/games_zx/helmet/dev/config.h",
+		"/D/Git/MK1/games_cpc/helmet/dev/engine.h",
+		"/D/Git/MK1/games_zx/helmet/dev/comp.bat",
+		"/D/Git/MK1/games_cpc/helmet/dev/comp.bat",
+		"/D/Git/MK1/games_zx/helmet/dev/tape/loaderzx48_zx7.asm-orig",
+		"/D/Git/MK1/games_zx/helmet/dev/maketape.bat",
+		"/D/Git/MK1/games_cpc/helmet/dev/mainloop.h",
+		"/D/Git/MK1/games_cpc/helmet/dev/config.h",
+		"/D/Git/MK1/games_cpc/helmet/dev/printer.h",
+		"/D/Git/MK1/games_zx/helmet/dev/custom.h",
+		"/D/Git/MK1/games_cpc/helmet/dev/system/loadercpc.asm-orig",
+		"/D/Git/MK1/games_zx/helmet/dev/definitions.h",
+		"/D/Git/MK1/games_cpc/helmet/dev/custom.h",
+		"/D/Git/MK1/games_zx/helmet/dev/engine.h",
+		"/D/Cosas/mcp62/src/minecraft/net/minecraft/src/RenderBlocks.java",
+		"/D/Cosas/postalpha/RetroMCP_ORIG/src/minecraft/net/minecraft/src/WorldRenderer.java",
+		"/D/Git/MK1/games_cpc/ramiro3/dev/custom.h",
+		"/D/Git/MK1/src/dev/engine.h",
+		"/D/Git/MK1/games_cpc/ramiro3/dev/comp.bat",
+		"/D/Git/MK1/games_cpc/ramiro3/dev/engine.h",
+		"/D/Git/minecraft_1.2.5_fixed_mods/README.md",
+		"/D/Git/MK1/games_cpc/ramiro3/dev/mainloop.h",
+		"/D/Git/MK1/games_cpc/ramiro3/script/script.spt",
+		"/D/Git/minecraft_1.2.5_fixed_mods/modloader_1.2.5_fix/README.md",
+		"/F/minecraft/versions/in-20100223/in-20100223.json",
+		"/D/Games/Minecraft b1.7.3 NFC/versions/NSSS/a1.1.10_01.json",
+		"/D/Games/Minecraft Better Than Adventure/Data/.minecraft/minecraft launcher/options.json",
+		"/C/Users/na_th_an/AppData/Roaming/.betacraft/servers/BTA/server.properties",
+		"/D/Games/Minecraft Better Than Adventure/Data/.minecraft/servers.dat",
+		"/D/Temp/VirtualBox Shared/arroba.txt",
+		"/D/git/MK1_Pestecera/docs/quickstart.md",
+		"/D/git/MK1_Pestecera/src/dev/wyz_player.h",
+		"/D/git/MK1_Pestecera/src/dev/mainloop.h",
+		"/D/git/MK1_Pestecera/src/dev/printer.h",
+		"/C/java/applications/webmovil/src/p3s.properties",
+		"/D/git/MK1_Pestecera/src/dev/loader/loadercpc.asm-orig",
+		"/D/git/MK1_Pestecera/src/dev/compile.bat",
+		"/D/git/MK1_Pestecera/src/utils/src/mkts_om.bas",
+		"/D/git/MK1/src_cpc/utils/imanol.bas",
+		"/D/git/MK1_Pestecera/src/dev/engine/enengine.h",
+		"/D/git/MK1_Pestecera/src/dev/engine/bullets.h",
+		"/D/git/MK1_Pestecera/src/dev/aplib.h",
+		"/D/git/MK1_Pestecera/src/dev/mainloop/game_loop.h",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/definitions.h",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/printer.h",
+		"/D/git/MK1_Pestecera/src/dev/assets/sprites.h",
+		"/D/git/MK1_Pestecera/src/dev/definitions.h",
+		"/D/git/MK1_Pestecera/src/dev/assets/trpixlut.h",
+		"/D/git/MK1_Pestecera/src/dev/autodefs.h",
+		"/D/git/MK1_Pestecera/src/dev/my/config.h",
+		"/D/git/MK1_Pestecera/src/dev/pantallas.h",
+		"/D/git/MK1_Pestecera/src/dev/my/fixed_screens.h",
+		"/D/git/MK1_Pestecera/src/dev/mk1.c",
+		"/D/temp/cubito/web/comics.css",
+		"/C/Users/jcastano/Desktop/test.html",
+		"/D/temp/cubito/comics.css",
+		"/D/git/MK1_Pestecera/src/dev/assets/spriteset_mappings.h",
+		"/D/git/MK1_Pestecera/examples/jetpaco/dev/loader/loadercpc.asm-orig",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/loader/loadercpc.asm-orig",
+		"/D/Proyectos/2021/20210407a - Nuevos datos de Sirhus en LDAP/ANEXO2 - Actualizar aplicación Sirhus/instrucciones.txt",
+		"/D/git/MK1_Pestecera/src/dev/loader/loadercpc.asm",
+		"/D/git/MK1/examples/helmet/map/mapa.MAP",
+		"/D/Proyectos/CIs.txt",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/compile.bat",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/loader/preloadercpc.asm-orig",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/mainloop.h",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/aplib.h",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/helmet.asm",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/my/msc.h",
+		"/D/git/MK1_Pestecera/examples/jetpaco/dev/compile.bat",
+		"/D/git/MK1_Pestecera/src/trash/mkcdt.bat",
+		"/D/git/MK1_Pestecera/diario.md",
+		"/D/git/MK1_Pestecera/src/dev/loader/preloadercpc.asm-orig",
+		"/D/git/MK1_Pestecera/src/dev/loader/preloadercpc.asm",
+		"/D/git/MK1_Pestecera/README.md",
+		"/C/Users/jcastano/AppData/Local/Temp/7zOCC2C72D4/dzx7_standard.asm",
+		"/D/git/MK1_Pestecera/docs/config.h.md",
+		"/D/Proyectos/2021/20210406a - Corrección eliminación DNI en miCuenta con usuarios GUIA+SIRHUS/instrucciones.txt",
+		"/D/git/MK1_Pestecera/examples/jetpaco/dev/my/config.h",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/engine/simple_cocos.h",
+		"/C/Users/jcastano/Desktop/LDAP Browser/ldapescritura.juntadeandalucia.es - admin.cfg",
+		"/D/git/MK1_Pestecera/env/cpc_pal.pal",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/mainloop/game_loop.h",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/my/config.h",
+		"/Z/MK1_Pestecera/examples/helmet/dev/compile.bat",
+		"/Z/MK1_Pestecera/examples/helmet/README.md",
+		"/Z/MK1_Pestecera/examples/helmet/dev/oooooo.sna",
+		"/Z/MK1_Pestecera/examples/helmet/dev/my/ci/extra_vars.h",
+		"/D/git/MK1_Pestecera/examples/helmet/README.md",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/engine/enem_mods/enem_type_pursuers_asm.h",
+		"/D/git/MK1_Pestecera/examples/helmet/dev/my/ci/on_tile_pushed.h",
+		"/E/git/MK1_Pestecera/examples/helmet/dev/wyz_player.h",
+		"/E/git/MK1_Pestecera/examples/helmet/dev/engine.h",
+		"/E/git/MK1_Pestecera/examples/helmet/dev/engine/bullets.h",
+		"/E/git/MK1_Pestecera/examples/helmet/dev/my/fixed_screens.h",
+		"/E/git/MK1_Pestecera/examples/helmet/mus/compress_songs.bat",
+		"/E/git/MK1_Pestecera/diario.md",
+		"/E/git/MK1_Pestecera/examples/helmet/dev/my/wyz/songs.h",
+		"/E/git/MK1_Pestecera/examples/helmet/dev/my/levelset.h",
+		"/F/git/MK1_Pestecera/examples/helmet/mus/01_ingame.mus.bin",
+		"/F/git/MK1_Pestecera/src/dev/loader/loadercpc.asm-orig",
+		"/C/git/MK1_Pestecera/lib/cpcwyzlib/cpc_WyzPlayer.asm",
+		"/C/git/MK1_Pestecera/src/dev/mainloop.h",
+		"/C/git/MK1_Pestecera/src/dev/autodefs.h",
+		"/C/git/MK1_Pestecera/src/dev/my/sound.h",
+		"/C/git/MK1_Pestecera/lib/cpcwyzlib/cpcwyzlib.h",
+		"/C/git/MK1_Pestecera/src/dev/mk1.c",
+		"/C/git/MK1_Pestecera/src/dev/savegame.h",
+		"/C/git/MK1_Pestecera/src/dev/printer.h",
+		"/C/git/MK1_Pestecera/src/dev/my/title_screen.h",
+		"/C/git/MK1_Pestecera/src/dev/my/level_screen.h",
+		"/C/git/MK1_Pestecera/src/dev/my/fixed_screens.h",
+		"/C/git/MK1_Pestecera/src/dev/my/config.h",
+		"/C/git/MK1_Pestecera/src/dev/mainloop/update_sprites.h",
+		"/C/git/MK1_Pestecera/src/dev/mainloop/game_loop.h",
+		"/C/git/MK1_Pestecera/src/dev/engine/player.h",
+		"/C/git/MK1_Pestecera/src/dev/engine/hotspots.h",
+		"/C/git/MK1_Pestecera/src/dev/engine/enengine.h",
+		"/C/git/MK1_Pestecera/src/dev/engine/bullets.h",
+		"/C/git/MK1_Pestecera/src/dev/engine.h",
+		"/C/git/MK1_Pestecera/diario.md",
+		"/C/git/MK1_Pestecera/src/dev/definitions.h",
+		"/C/git/MK1_Pestecera/src/dev/assets/spriteset_mappings.h",
+		"/C/git/MK1_Pestecera/src/utils/src/mkts_om.bas"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "utils/pageditor.bas",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 12947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4095.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								748,
+								748
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/Git/MK1_Pestecera/wip/deleteme/mus/compress_songs.bat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								63,
+								63
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "teletext.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\git\\MK1\\MK1_v4.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

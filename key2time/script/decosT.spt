@@ -1,0 +1,67 @@
+ENTERING SCREEN 0
+	IF TRUE
+	THEN
+		DECORATIONS
+			6, 1, 16
+			7, 1, 18
+			8, 1, 19
+			9, 1, 21
+			6, 2, 17
+			8, 2, 20
+			6, 4, 23
+			7, 4, 24
+			8, 4, 25
+			3, 5, 22
+			6, 5, 26
+			7, 5, 27
+			8, 5, 28
+			11, 5, 22
+			6, 6, 29
+			7, 6, 30
+			8, 6, 31
+		END
+	END
+END
+ 
+ENTERING SCREEN 4
+	IF TRUE
+	THEN
+		DECORATIONS
+			4, 5, 16
+			6, 5, 20
+			7, 5, 21
+			8, 5, 22
+			4, 6, 17
+			6, 6, 23
+			7, 6, 24
+			8, 6, 25
+			11, 6, 18
+			12, 6, 19
+		END
+	END
+END
+ 
+ENTERING SCREEN 8
+	IF TRUE
+	THEN
+		DECORATIONS
+		END
+	END
+END
+ 
+ENTERING SCREEN 9
+	IF TRUE
+	THEN
+		DECORATIONS
+			12, 8, 18
+			13, 8, 19
+		END
+	END
+END
+ 
+ 
+// If you use extraprints.h, trim this bit and use it!
+const unsigned char ep_scr_00 [] = { 0x61, 16, 0x71, 18, 0x81, 19, 0x91, 21, 0x62, 17, 0x82, 20, 0x64, 23, 0x74, 24, 0x84, 25, 0x35, 22, 0x65, 26, 0x75, 27, 0x85, 28, 0xB5, 22, 0x66, 29, 0x76, 30, 0x86, 31 };
+const unsigned char ep_scr_04 [] = { 0x45, 16, 0x65, 20, 0x75, 21, 0x85, 22, 0x46, 17, 0x66, 23, 0x76, 24, 0x86, 25, 0xB6, 18, 0xC6, 19 };
+const unsigned char ep_scr_09 [] = { 0xC8, 18, 0xD8, 19 };
+const unsigned char *prints [] = { ep_scr_00, 0, 0, 0, ep_scr_04, 0, 0, 0, 0, ep_scr_09, 0, 0, 0, 0, 0, 0 };

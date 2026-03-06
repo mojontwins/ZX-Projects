@@ -1,0 +1,120 @@
+Mega Meghan and the Key to Time
+
+Objetivo principal: encontrar las cuatro partes [(LLAVE_1), (LLAVE_2), (LLAVE_3), (ARCILLA_AZUL)] de la llave del tiempo y ensamblarlas dentro de la TARDIS usando el ciclotrón de emulsión inversa... No hay ucarta parte, hay que reunir las otras tres y usar la arcilla azul para completar el hueco que falta.
+
+La TARDIS está bloqueada en el planeta Rhagani. Puede desbloquearse parcialmente para viajar a Épsolon Messei, pero para ello hace falta cambiar un (CIRCUITO_INTEGRADO) (en realidad son cuatro, pero sólo hace falta uno para un salto espacial cercano - y sólo hay uno en el juego).
+
+Los escenarios del juego son fases cortas ambientadas en diferentes etapas de la historia de Rhagani, desde la época de las galerías ancestrales de bloques de piedra hasta el período extra-dimensional de los entes mentales. Así, a bote pronto:
+
+- Época ancestral. Escenario de galerías de sillares grandes, nieve y hielo. [233]
+- Período pseudomedieval, ciudad de hierro y piedra, grandes bodegas [1,001]
+- Ciudad Oscura, dominada por un culto sectario. Todos los enemigos disparan si no estás oculta [3,322]
+- La guerra [5,992]
+- Período postnuclear, ubicado tras la guerra nuclear. Escenario urbano comido de vegetación. Zombies radioactivos (si te tocan hay una cuenta atrás hasta que mueres si no vuelves a la TARDIS para curarte) [6,800]
+- Desierto [10,000]
+- Período extra-dimensional, ubicado en una especie de estación espacial rodeada de vacío extra-dimensional. Todos los personajes son mentes contenidas en el ordenador y con los que se puede hablar a través de los terminales. [50,000]
+- Fin del tiempo. Sólo una pantalla, la de la TARDIS, y nada que hacer salvo hablar con un personaje que dice muchas paranoias. Y tiene la (LLAVE_2). [80,000]
+
+Hay portales que tienen conexiones fijas entre dos épocas. Se puede viajar con la TARDIS desde la pantalla donde se ubica. Hay que tener en cuenta que hay veces que para acceder a alguna parte del mapa de un nivel hay que viajar en el tiempo a otro y usar un portal.
+
+Lo más sencillo es diseñar todas las fases de 16 pantallas y forma cuadrada y que estén como "superpuestas".
+
+IDEAS:
+
+- Vino añejo: sirve para sobornar a un guardia borracho que guarda la zona infestada de zombies y no te deja pasar en [6,800]. En la misma pantalla hay una (BOTELLA_DE_VINO), que el guardia siempre rechaza porque sólo bebe gran reserva. La pantalla también da acceso a una especie de bodega abandonada (hacer patente por los gráficos). La idea es llevar la (BOTELLA_DE_VINO) a la misma pantalla en [1,001] y luego recogerla en [6,800], cuando ya sea añeja. El problema es que esa pantalla está cerrada con una cancela en [1,001] y sólo se puede acceder desde un portal en [233]. -> Esto da acceso a todo el mapa de [6,800], y es necesario para conseguir el (CIRCUITO_INTEGRADO).
+
+Ojo, el guardia borracho NO BEBE BIRRA. (se refiere a ella como MEADOS DE SATAN).
+
+- Portales: los portales están cerrados al principio del juego y para activarlos hay que hacer estallar un dispositivo de contención temporal en [50,000]. Para ello son necesarios (EXPLOSIVOS) de [5,992]. Los (EXPLOSIVOS) están custodiados por un guardian que no te deja pasar ni se deja sobornar. Hay una parte de la cancela que no existe, pero hay un gran árbol bloqueando. Para pasar hay que viajar al período pseudomedieval, buscar esa misma pantalla, y echar un (PESTICIDA) en esa zona. El pesticida se consigue en [50,000], dentro del laboratorio, al que podremos acceder rompiendo el enlace magnético de la puerta con un (IMAN) que hay en la época ancestral, y que sirve como emblema del salón de armas. Como hay un soldado que no nos lo deja coger, habrá que despistarlo con unas (FOTOS_GUARRAS) que guardamos en un arcón en la TARDIS.
+
+- (LLAVE_1) se ubica en Épsolon Messei. Está puesta en un altar. Delante hay una señora que habla mucho. Dice una frase cada vez que actuamos con ella. Hay que escucharla infintamente. En la pared hay una inscripción sobre la paciencia.
+
+- La (ARCILLA_AZUL) se obtiene en [233] derritiendo el hielo azul que hay en un lago congelado. Para eso necesitamos un lanzallamas de [5,992] rellenado con gas de un oleoducto de [6,800].
+
+- El viejo raro de [80,000] tiene que decir un chorro inmenso de frases. Tengo que implementar algún tipo de random para esto, o mejor definir una flag para que hable secuencialmente. Mejor esto. Y si le damos el (LLAVERO DE ESPINETE) nos da la (LLAVE 2) <- momento objeto estúpido.
+
+- Insertar un último puzzle para la (LLAVE_3), que tenga algo que ver con bragas.
+~~~~ Ideas peregrinas:
+- Existe un barril de cerveza cruzcampo, y necesitamos la cerveza para algo.
+- Lo único que hay para transportarla es un vaso de Ámbar.
+
+Idea para la llave 3: Está en el desierto [10,000]. La pantalla del desierto a la que se viaja desde la TARDIS no tiene salida, está todo bloqueado por piedras gordas. Si accedemos usando un portal desde, por ejemplo, [6,800] (una vez activados los portales), aparecemos en "el resto del mapa" que es una zona completamente abierta con pantallas muy similares (coño, es un desierto, hay que perderse). Puedo incluso implementar un mapa cíclico.  En una de las pantallas hay una especie de iglesia con un detector en la entrada. El detector de la entrada es un detector de bragas princesa de cuello vuelto. Obviamente pita cuando Meghan intenta entrar. Necesitamos llevar unas en el inventario para poder entrar. Las [BRAGAS] están en [3,322], en una tienda de ropa.
+
+Dentro de la iglesia hay un orondo predicador sediento. Quiere beber cerveza, y sólo cerveza. La cerveza está, como no, en un barril de la bodega en [1,001]. El vaso de Ámbar lo tenemos en la TARDIS.
+
+PARA EL MOTOR:
+
+- Tengo que implementar un arcón en la TARDIS para ir dejando objetos y luego recuperarlos. No es más que un array de 16 espacios (para poder contener TODOS los objetos del juego) pero hay que ver como hacer la interfaz para que sea lo más sencilla posible. Podría mostrar en la pantalla y seleccionar alguno de una forma sencilla. O hacer algo así:
+
+    < [] > 
+    
+    Donde [] es el objeto en el slot actual del arcón y < y > son de adorno para indicar que se puede cambiar de objeto con izquierda y derecha. Pulsando Acción se intercambia la posición actual del inventario con el arcón. No sé, le tengo que dar una vuelta.
+
+- Implementar modificaciones de ax y rx para resbalar en hielos.
+
+- Implementar correpasillos, enemigos que te persiguen pero son capaces de tomar otra dirección en pasillos. Lo malo de estas rutinas es que se suelen volver locos en espacios abiertos.
+
+- Versión super atontada del "tipo 7" clásico, sin reaparecer, ni nada. Sólo acosar.
+
+- Cintas transportadoras? Montar como custom usando los bits 7 y 6 de los behaviours, además del bit 5. Queda así (a lo mejor estaría bien convertir esto en el estándar para los behaviours top-down, esto lo tengo muy poco estudiado:
+
+bit 0: enemigo (mata)
+bit 1: oculta
+bit 2: 
+bit 3: obstáculo
+bit 4: se puede romper
+bit 5: conveyor
+
+Pensándolo bien, si es conveyor ni es obstáculo ni se puede romper... Pero si uso esos bits se complicaría el código. Si establecemos que un conveyor jamás podrá ocultar (lo cual tampoco creo que sea un problema) podremos hacer esto:
+
+IF (bit 5) :
+   bits 1-2 = 00 : arrastra hacia arriba.
+   bits 1-2 = 01 : arrastra hacia abajo.
+   bits 1-2 = 10 : arrastra hacia la izquierda.
+   bits 1-2 = 11 : arrastra hacia la derecha.
+   
+- ¿Implementar un salto? Podría molar poder saltar un tile, pero esto tengo que pensármelo bien :*) Porque con el salto podría implementar plataformas móviles. Le daré una vuelta, puede dar juego y tal.	
+    
+Objetos (hasta 16 :-S)
+
+(LLAVE 1)
+(LLAVE 2)
+(LLAVE 3)
+(ARCILLA_AZUL)
+(CIRCUITO_INTEGRADO)
+(BOTELLA_DE_VINO)
+(BOTELLA_LLENA)
+(PESTICIDA)
+(EXPLOSIVOS)
+(IMAN)
+(FOTOS_GUARRAS)
+(LLAVERO_DE_ESPINETE)
+(BRAGAS)
+(JARRA_AMBAR)
+
+Tema de las caídas al vacío, para que no se me olvide esta idea:
+
+1.- Detectar después de mover las plataformas móviles ¿? Pensar y hacer cosas.
+2.- Detectar con un par de frames de retraso 
+3.- Al "caer" mostrar un sprite nuevo. ¿Es posible ampliar el spriteset en un par de sprites más (total 18), o incluso hacerlo flexible? Tengo que mirar esto, la parte de los gráficos de los sprites es la que menos me gusta... -
+4.- Resuelto donde meter el puto sprite, el tema es mostrar el sprite de "me estoy cayendo", parando la ejecución y haciendo sonar un "AY" tipo Ninjajar!, para luego lanzar un DIE AND RESPAWN.
+
+Tengo que mirar como meter más sprites en el spriteset de forma que se puedan cambiar en cada fase - aunque en realidad si no encuentro una forma rápido tampoco es importante y lo meto como sprite_XX que toque como la explosión o el sprite vacío y a tomar viento.	
+
+ESTUDIO
+
+¿Cómo incluir más gráficos en el nivel comprimido?
+
+Estudiemos el manejador de niveles de Nicanor.
+
+---- resuelto
+
+Salto.
+
+En principio el salto será 100% flexible con su propia G, MAXVZ, INCRVZ, que se tomarán de los valores programados para la vista lateral.
+
+En esta primera versión la colisión solo es con el suelo (z = 0).
+
+Necesito p_z y p_vz.
+
+El salto será maniobrable, pero el frame que se pintará será en la dirección en la que se originó el salto, así que habrá que guardar p_facing_j

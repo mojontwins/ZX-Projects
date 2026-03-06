@@ -1,0 +1,5 @@
+Este texto tiene %%%cadenas%%% que hay que %%%sustituir%%%
+Comiendo apio.
+Y en esta, s¡ que hay %%%apio%%%.
+¨de verdad?
+Ya te digui, rodrigui.

@@ -1,0 +1,4 @@
+portraits	EQU 0803AH
+ptpl1		EQU 08008H
+ptpl2		EQU 0800CH
+ptpl3		EQU 0802AH
