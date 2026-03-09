@@ -1,4 +1,7 @@
 @echo off
+
+if [%1]==[justmaps] goto :justmaps
+
 echo Reordering GFX
 ..\utils\reordenator.exe ..\gfx\forest-work.png ..\gfx\forest-import.png > nul
 ..\utils\reordenator.exe ..\gfx\school-work.png ..\gfx\school-import.png > nul
@@ -44,6 +47,7 @@ echo Compressing BEHS
 ..\utils\apack.exe ..\bin\_training-behs.bin ..\bin\training-behs.bin > nul
 ..\utils\apack.exe ..\bin\_secret-behs.bin ..\bin\secret-behs.bin > nul
 
+:justmaps
 echo Compressing MAPS
 ..\utils\apack.exe ..\map\forest1.map ..\bin\map-forest1.bin > nul
 ..\utils\apack.exe ..\map\forest2.map ..\bin\map-forest2.bin > nul
@@ -72,3 +76,10 @@ echo Compressing MAPS
 ..\utils\apack.exe ..\map\luca2.map ..\bin\map-luca2.bin > nul
 ..\utils\apack.exe ..\map\luca3.map ..\bin\map-luca3.bin > nul
 ..\utils\apack.exe ..\map\luca4.map ..\bin\map-luca4.bin > nul
+
+echo Extra
+..\utils\png2scr.exe ..\gfx\screen-demo.png loading.bin  > nul
+..\utils\png2scr.exe ..\gfx\marco.png ..\gfx\marco.scr  > nul
+..\utils\apack.exe ..\gfx\marco.scr ..\bin\scr-mt-marco.bin > nul
+..\utils\png2scr.exe ..\gfx\comingsoon.png ..\gfx\comingsoon.scr  > nul
+..\utils\apack.exe ..\gfx\comingsoon.scr ..\bin\scr-comingsoon.bin > nul

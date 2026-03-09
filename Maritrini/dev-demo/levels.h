@@ -24,7 +24,7 @@ extern unsigned char behs [64];
 
 #asm
 	._behs
-		defs 16
+		defs 64
 #endasm
 
 WORLD worlds [] = {

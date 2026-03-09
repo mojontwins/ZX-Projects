@@ -74,7 +74,7 @@ ULA_LOOP:
 	scf
 	ld	a, $ff
 	ld	ix, $C000
-	ld	de, 16215
+	ld	de, 16316
 	call $0556
 	di
 
@@ -97,13 +97,13 @@ ULA_LOOP:
 
 	scf
 	ld	a, $ff
-	ld	ix, 56469
-	ld	de, 8531
+	ld	ix, 56472
+	ld	de, 8528
 	call $0556
 	di
 
 ; Decompress
-	ld  hl, 56469
+	ld  hl, 56472
 	ld  de, $9999
 	call depack
 	

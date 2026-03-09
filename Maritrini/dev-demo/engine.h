@@ -1367,10 +1367,19 @@ void collide (void) {
 	// Collide?
 
 	// Opt / easier: only collide ONCE per frame
+	// 2026 version: enemies NEVER overlap the player 
+	// so check is different. Register collision if:
+
+	// * if (ex == px - 2 || ex == px + 2)
+	//   * if (ey >= py - 1 && ey <= py + 1) -> COLLIDE
+	// * elseif (ey == py - 2 || py == py + 2)
+	//   * if (ex >= ex - 1 && ex <= px + 1) -> COLLIDE
+	// RET
+
+	// COLLIDE:
 
 	/*
-	if (enemies_x [ei] >= player.x - 1 && enemies_x [ei] <= player.x + 1 &&
-		enemies_y [ei] >= player.y - 1 && enemies_y [ei] <= player.y + 1) {
+	{
 		if (enemies_type [ei] == 4) {
 			enemies_en [ei] -= 8;
 		} else {
@@ -1402,9 +1411,9 @@ void collide (void) {
 			// enemies_x [ei] >= player.x - 1
 			ld  a, (_player) 		// player.x
 			dec a 
-			ld  d, a 
-			ld  a, e
-			cp  d 
+			ld  d, a  				// D = player.x - 1
+			ld  a, e 				// A = enemies_x [ei]
+			cp  d 					// A-D
 			jp  c, _en_bus_collision_done 
 
 			// enemies_x [ei] <= player.x + 1
@@ -1519,7 +1528,7 @@ void collide (void) {
 
 			// Aaaaaaaahhhh!!!
 	#endasm	
-			if (player.energy > 0) -- player.energy;
+			if (player.energy > 0) player.energy --;
 			wyz_play_sound (6);
 			draw_5_digit (11, 18, player.energy);
 	#asm
@@ -1602,8 +1611,8 @@ void enemies_move (void) {
 				xor a
 
 				ld  (_nd), a
-				ld  bc, (_ei)
-				ld  b, a
+				ld  bc, (_ei) 		// Just writes C, B is trash
+				ld  b, a 			// B = 0 to fix ptr
 
 				// if (enemies_type [ei] == 5) {
 				ld  hl, _enemies_type
@@ -1660,14 +1669,14 @@ void enemies_move (void) {
 			._en_bus_move_horizontal
 				ld  hl, _enemies_x
 				add hl, bc
-				ld  a, (hl)
-				ld  (_rdx), a
-				ld  d, a
+				ld  a, (hl) 				// A = enemies_x [ei]
+				ld  (_rdx), a 				// rdx = enemies_x [ei]
+				ld  d, a 					// D = enemies_x [ei]
 
 				ld  hl, _enemies_y
 				add hl, bc
 				ld  a, (hl)
-				ld  (_rdy), a
+				ld  (_rdy), a 				// rdy = enemies_y [ei]
 
 				ld  a, (_player) 			// player.x
 				cp  d 
@@ -1785,10 +1794,6 @@ void enemies_move (void) {
 				// nd = 1;
 				ld  a, 1
 				ld  (_nd), a
-
-				// Collide with player?
-				// If so, movement will be undone
-				call _collide
 
 			._en_bus_move_vertical
 
@@ -1920,13 +1925,12 @@ void enemies_move (void) {
 				ld  a, 1
 				ld  (_nd), a
 
-				// Collide with player?
-				// If so, movement will be undone
-				call _collide
-
 			._en_bus_upd_done
 
-
+				// Check collision, new method (2026)
+				// Collide with player?
+				// If so, movement will be undone
+				call _en_bus_collision_check
 
 				// if (nd) enemies_frame [ei] = 1 - enemies_frame [ei];	
 				ld  a, (_nd)
@@ -2708,7 +2712,7 @@ void game (unsigned char world, unsigned char level) {
 		
 		// Play music
 		
-		wyz_play_music (level);
+		wyz_play_music (1 + (world & 3));
 		cam_x = player.x - 15;
 		cam_y = player.y - 7;
 		update_cam ();
@@ -2732,7 +2736,7 @@ void game (unsigned char world, unsigned char level) {
 			sx = player.real_x;
 			sy = player.real_y;
 			sn = 16 + player.facing + player.frame;
-			sc = 68;
+			sc = 4+64;
 			draw_sprite ();
 			
 			// Now make everything happen

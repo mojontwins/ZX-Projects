@@ -18,18 +18,18 @@ RESOURCE resources [] = {
     { 3, 0xE806 },
     { 3, 0xEDD3 },
     { 3, 0xF353 },
-    { 3, 0xF7DF },
-    { 3, 0xFB84 },
+    { 3, 0xF843 },
+    { 3, 0xFBE9 },
     { 4, 0xC000 },
     { 4, 0xC391 },
     { 4, 0xC6F8 },
     { 4, 0xCA05 },
     { 4, 0xCC49 },
-    { 3, 0xFF1B },
-    { 3, 0xFF2E },
-    { 3, 0xFF3A },
-    { 3, 0xFF45 },
-    { 3, 0xFF4E }
+    { 3, 0xFF80 },
+    { 3, 0xFF93 },
+    { 3, 0xFF9F },
+    { 3, 0xFFAA },
+    { 3, 0xFFB3 }
 };
 
 #define SCR_ENDING_2_BIN                0
