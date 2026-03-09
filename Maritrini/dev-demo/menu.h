@@ -40,24 +40,18 @@ unsigned char menu () {
 		} else {	
 			do {
 				_n = 0;
-				switch (
-					three_opts (
+				rda = three_opts (
 						"1 KEYBOARD",
 						"2 KEMPSTON",
 						"3 SINCLAIR"
-					)
-				) {
+					);
+				switch (rda) {
 					case 1:
-						joyfunc = in_JoyKeyboard;
-						_n = 1;
-						break;
 					case 2:
-						joyfunc = in_JoyKempston;
-						_n = 1;
-						break;
 					case 3:
-						joyfunc = in_JoySinclair1;
+						joyfunc = joyfuncs [rda-1];
 						_n = 1;
+						
 						break;
 				}
 			} while (_n == 0);

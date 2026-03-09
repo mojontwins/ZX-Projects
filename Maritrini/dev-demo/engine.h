@@ -1235,7 +1235,7 @@ void enemies_select (void) {
 			ld  hl, _enemies_x
 			add hl, bc
 			ld  a, (hl)
-			inc a
+			//inc a
 			sub d
 			ld  hl, _enemies_real_x
 			add hl, bc
@@ -1247,7 +1247,7 @@ void enemies_select (void) {
 			ld  hl, _enemies_y
 			add hl, bc
 			ld  a, (hl)
-			inc a
+			//inc a
 			sub d
 			ld  hl, _enemies_real_y
 			add hl, bc
@@ -1403,47 +1403,83 @@ void collide (void) {
 	#asm
 
 		._en_bus_collision_check
-			// E = enemies_x [ei]
+			
+			// if (ex == px - 2 || ex == px + 2)
+
 			ld  hl, _enemies_x
 			add hl, bc
-			ld  e, (hl) 
+			ld  e, (hl) 			// E = enemies_x [ei]
+			
+			ld  a, (_player) 		// A = player.x
+			sub 2 
+			cp  e 					// player.x - 2 == enemies_x [ei] ?
+			jr  z, _en_bus_collision_check_h
 
-			// enemies_x [ei] >= player.x - 1
-			ld  a, (_player) 		// player.x
-			dec a 
-			ld  d, a  				// D = player.x - 1
-			ld  a, e 				// A = enemies_x [ei]
-			cp  d 					// A-D
-			jp  c, _en_bus_collision_done 
+			add 4 					// A = player.x - 2 + 4 
+			cp  e 					// player.x + 2 == enemies_x [ei] ?
+			jr  z, _en_bus_collision_check_h 
 
-			// enemies_x [ei] <= player.x + 1
-			// player.x + 1 >= enemies_x [ei]				
-			ld  d, e
-			ld  a, (_player) 		// player.x 
-			inc a 
-			cp  d 
-			jp  c, _en_bus_collision_done 
+			// elseif (ey == py - 2 || py == py + 2)
 
-			// E = enemies_y [ei]
 			ld  hl, _enemies_y
 			add hl, bc
-			ld  e, (hl) 
+			ld  e, (hl) 			// E = enemies_y [ei]
+			
+			ld  a, (_player + 1) 	// A = player.y
+			sub 2 
+			cp  e 					// player.y - 2 == enemies_y [ei] ?
+			jr  z, _en_bus_collision_check_v
 
-			// enemies_y [ei] >= player.y - 1
-			ld  a, (_player+1) 		// player.y
-			dec a 
-			ld  d, a 
-			ld  a, e
-			cp  d 
-			jp  c, _en_bus_collision_done 
+			add 4 					// A = player.y - 2 + 4 
+			cp  e 					// player.y + 2 == enemies_y [ei] ?
+			jr  z, _en_bus_collision_check_v
 
-			// enemies_y [ei] <= player.y + 1
-			// player.y + 1 >= enemies_y [ei]
-			ld  d, e
-			ld  a, (_player+1) 		// player.y
-			inc a 
-			cp  d 
-			jr  c, _en_bus_collision_done 
+			ret
+
+		._en_bus_collision_check_h
+			// if (ey >= py - 1 && ey <= py + 1) -> COLLIDE
+			// ey >= py - 1
+			ld  hl, _enemies_y
+			add hl, bc
+			ld  e, (hl) 			// E = enemies_y [ei]
+
+			ld  a, (_player + 1) 	// A = player.y  
+			dec a 					// A = player.y - 1
+			ld  d, a  				// D = player.y - 1
+			ld  a, e 				// A = enemies_y [ei]
+			cp  d  					// A >= D ?
+			ret c  					// NOPE
+
+			// py + 1 >= ey 
+			ld  a, d 				// A = player.y - 1
+			add 2 					// A = player.y + 1
+			cp  e 					// A >= E ?
+			ret c 					// NOPE
+
+			// Got to this point -> do collision
+			jr  _en_bus_collision_do
+
+		._en_bus_collision_check_v
+			// if (ex >= px - 1 && ex <= px + 1) -> COLLIDE
+			// ex >= px - 1
+			ld  hl, _enemies_x
+			add hl, bc
+			ld  e, (hl) 			// E = enemies_x [ei]
+
+			ld  a, (_player) 		// A = player.x
+			dec a 					// A = player.x - 1
+			ld  d, a  				// D = player.x - 1
+			ld  a, e 				// A = enemies_x [ei]
+			cp  d  					// A >= D ?
+			ret c  					// NOPE
+
+			// py + 1 >= ex 
+			ld  a, d 				// A = player.x - 1
+			add 2 					// A = player.x + 1
+			cp  e 					// A >= E ?
+			ret c 					// NOPE
+
+			// Got to this point -> do collision
 
 		._en_bus_collision_do
 			ld  a, 1
@@ -1728,7 +1764,7 @@ void enemies_move (void) {
 				ld  a, (_cam_x)
 				ld  d, a
 				ld  a, (hl)
-				inc a 
+				//inc a 
 				sub d 
 
 				ld  hl, _enemies_real_x
@@ -1784,7 +1820,7 @@ void enemies_move (void) {
 				ld  a, (_cam_x)
 				ld  d, a
 				ld  a, (hl)
-				inc a 
+				//inc a 
 				sub d 
 
 				ld  hl, _enemies_real_x
@@ -1858,7 +1894,7 @@ void enemies_move (void) {
 				ld  a, (_cam_y)
 				ld  d, a
 				ld  a, (hl)
-				inc a 
+				//inc a 
 				sub d 
 
 				ld  hl, _enemies_real_y
@@ -1914,7 +1950,7 @@ void enemies_move (void) {
 				ld  a, (_cam_y)
 				ld  d, a
 				ld  a, (hl)
-				inc a 
+				//inc a 
 				sub d 
 
 				ld  hl, _enemies_real_y
@@ -2729,7 +2765,6 @@ void game (unsigned char world, unsigned char level) {
 			destructors_update ();
 			focos_update ();
 			enemies_select ();
-			enemies_move ();
 			player_move ();
 
 			// Draw player
@@ -2739,6 +2774,8 @@ void game (unsigned char world, unsigned char level) {
 			sc = 4+64;
 			draw_sprite ();
 			
+			enemies_move ();
+
 			// Now make everything happen
 
 			// Update bomb

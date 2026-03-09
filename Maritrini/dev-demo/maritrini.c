@@ -51,6 +51,10 @@
 #include "levels.h"
 
 uint (*joyfunc)(struct in_UDK *) __z88dk_fastcall = in_JoyKeyboard;
+const void *joyfuncs [] = {
+	in_JoyKeyboard, in_JoyKempston, in_JoySinclair1
+};
+
 void clear_keybuff () {
 	while (in_Inkey ());
 }
