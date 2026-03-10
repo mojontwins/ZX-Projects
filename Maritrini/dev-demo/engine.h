@@ -1235,7 +1235,7 @@ void enemies_select (void) {
 			ld  hl, _enemies_x
 			add hl, bc
 			ld  a, (hl)
-			//inc a
+			inc a
 			sub d
 			ld  hl, _enemies_real_x
 			add hl, bc
@@ -1247,7 +1247,7 @@ void enemies_select (void) {
 			ld  hl, _enemies_y
 			add hl, bc
 			ld  a, (hl)
-			//inc a
+			inc a
 			sub d
 			ld  hl, _enemies_real_y
 			add hl, bc
@@ -1390,9 +1390,7 @@ void collide (void) {
 			enemies_frame [ei] = 0;
 			enemies_ns [ei] = 0;
 		}
-		// Don't let the enemy overlap the player
-		enemies_x [ei] = rdx;
-		enemies_y [ei] = rdy;
+		
 		// Aaaaaaaahhhh!!!
 		if (player.energy > 0) -- player.energy;
 		wyz_play_sound (6);
@@ -1482,9 +1480,7 @@ void collide (void) {
 			// Got to this point -> do collision
 
 		._en_bus_collision_do
-			ld  a, 1
-			ld  (_player + 27), a
-
+			
 			/*
 			if (enemies_type [ei] == 4) {
 				enemies_en [ei] -= 8;
@@ -1545,22 +1541,11 @@ void collide (void) {
 			ld  (hl), a 
 		._en_bus_collision_kill_done
 
-			// Don't let the enemy overlap the player
-			// enemies_x [ei] = rdx;
-			ld  a, (_rdx)
-			ld  hl, _enemies_x 
-			add hl, bc 
-			ld  (hl), a 
-
-			// enemies_y [ei] = rdy;
-			ld  a, (_rdy)
-			ld  hl, _enemies_y 
-			add hl, bc 
-			ld  (hl), a 
-
 			ld  a, (_player + 27) 	// player.collided
 			or  a 
 			jp  nz, _en_bus_collision_done
+			inc a
+			ld  (_player + 27), a
 
 			// Aaaaaaaahhhh!!!
 	#endasm	
@@ -1664,7 +1649,7 @@ void enemies_move (void) {
 				inc (hl)
 				ld  a, (hl)
 				cp  2
-				jp  nz, _en_bus_upd_done
+				ret  nz
 
 				ld  hl, _enemies_type
 				add hl, bc
@@ -1681,7 +1666,8 @@ void enemies_move (void) {
 				add hl, bc
 				ld  (hl), a 
 
-				jp  _en_bus_upd_done
+				//jp  _en_bus_upd_done
+				ret
 
 			._en_bus_upd_not_dying
 				// else if (enemies_type [ei] == 4 || halflife) {
@@ -1706,13 +1692,13 @@ void enemies_move (void) {
 				ld  hl, _enemies_x
 				add hl, bc
 				ld  a, (hl) 				// A = enemies_x [ei]
-				ld  (_rdx), a 				// rdx = enemies_x [ei]
+				//ld  (_rdx), a 				// rdx = enemies_x [ei]
 				ld  d, a 					// D = enemies_x [ei]
 
 				ld  hl, _enemies_y
 				add hl, bc
 				ld  a, (hl)
-				ld  (_rdy), a 				// rdy = enemies_y [ei]
+				//ld  (_rdy), a 				// rdy = enemies_y [ei]
 
 				ld  a, (_player) 			// player.x
 				cp  d 
@@ -1764,7 +1750,7 @@ void enemies_move (void) {
 				ld  a, (_cam_x)
 				ld  d, a
 				ld  a, (hl)
-				//inc a 
+				inc a 
 				sub d 
 
 				ld  hl, _enemies_real_x
@@ -1820,7 +1806,7 @@ void enemies_move (void) {
 				ld  a, (_cam_x)
 				ld  d, a
 				ld  a, (hl)
-				//inc a 
+				inc a 
 				sub d 
 
 				ld  hl, _enemies_real_x
@@ -1836,13 +1822,13 @@ void enemies_move (void) {
 				ld  hl, _enemies_y
 				add hl, bc
 				ld  a, (hl)
-				ld  (_rdy), a 
+				//ld  (_rdy), a 
 				ld  d, a
 
 				ld  hl, _enemies_x
 				add hl, bc
 				ld  a, (hl)
-				ld  (_rdx), a 
+				//ld  (_rdx), a 
 
 				ld  a, (_player+1) 			// player.y
 				cp  d 
@@ -1894,7 +1880,7 @@ void enemies_move (void) {
 				ld  a, (_cam_y)
 				ld  d, a
 				ld  a, (hl)
-				//inc a 
+				inc a 
 				sub d 
 
 				ld  hl, _enemies_real_y
@@ -1950,7 +1936,7 @@ void enemies_move (void) {
 				ld  a, (_cam_y)
 				ld  d, a
 				ld  a, (hl)
-				//inc a 
+				inc a 
 				sub d 
 
 				ld  hl, _enemies_real_y
@@ -1965,8 +1951,8 @@ void enemies_move (void) {
 
 				// Check collision, new method (2026)
 				// Collide with player?
-				// If so, movement will be undone
 				call _en_bus_collision_check
+			._en_bus_collision_check_done
 
 				// if (nd) enemies_frame [ei] = 1 - enemies_frame [ei];	
 				ld  a, (_nd)
